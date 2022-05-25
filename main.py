@@ -1,8 +1,4 @@
-f = open("python_files.txt", "w")
-f.write("I like Python because its easy to use")
-f = open("python_files.txt", "a")
-f.write("\nTo practice more and learn more")
-f.write("\nBy making my own python projects")
-f.write("\nMy goal is to make a simple program for my learning")
 f = open("python_files.txt", "r")
-f.close()
+for x in f:
+    print(x)
+
