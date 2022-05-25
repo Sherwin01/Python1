@@ -1,11 +1,21 @@
-flavors = ["vanilla", "chocolate", "strawberry", "cookies_n_cream", "bubblegum"]
-toppings = ["almonds", "banana_slices", "chocolate syrup", "caramel syrup", "white_chocolate_chips"]
+groceries = {"chicken": 8, "apples": 6, "cucumbers": 3,
+             "milk": 2, "oranges": 4}
+x = groceries.pop("oranges")
 
-ice_cream = dict(zip(flavors, toppings))
+print(groceries)
 
-print(ice_cream)
+speakers = {"Sir Rafael": 54, "Ms. Joan": 33, "Ms. Dana": 67}
 
-ice_cream["chocolate"] = "blueberries"
-ice_cream.update({"matcha": "pistachios", "ube": "mango slices"})
+y = speakers.keys()
 
-print(ice_cream)
+print(y)
+
+swimming_team_tryout = {"Carl": "passed", "Quentine": "failed", "John Y.": "passed",
+                        "Peter": "failed", "Max T.": "passed", "Joseph": "passed",
+                        "Jone": "failed", "Jorge": "failed", "George": "passed",
+                        "Ben": "passed", "Jerome": "passed", "Rick": "failed",
+                        "Max G.": "failed", "john P.": "failed", "Vince": "passed"}
+
+stt = swimming_team_tryout.get("Jorge")
+
+print(stt)
