@@ -1,0 +1,4 @@
+I like Python because its easy to use
+To practice more and learn more
+By making my own python projects
+My goal is to make a simple program for my learning

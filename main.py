@@ -1,21 +1,8 @@
-groceries = {"chicken": 8, "apples": 6, "cucumbers": 3,
-             "milk": 2, "oranges": 4}
-x = groceries.pop("oranges")
-
-print(groceries)
-
-speakers = {"Sir Rafael": 54, "Ms. Joan": 33, "Ms. Dana": 67}
-
-y = speakers.keys()
-
-print(y)
-
-swimming_team_tryout = {"Carl": "passed", "Quentine": "failed", "John Y.": "passed",
-                        "Peter": "failed", "Max T.": "passed", "Joseph": "passed",
-                        "Jone": "failed", "Jorge": "failed", "George": "passed",
-                        "Ben": "passed", "Jerome": "passed", "Rick": "failed",
-                        "Max G.": "failed", "john P.": "failed", "Vince": "passed"}
-
-stt = swimming_team_tryout.get("Jorge")
-
-print(stt)
+f = open("python_files.txt", "w")
+f.write("I like Python because its easy to use")
+f = open("python_files.txt", "a")
+f.write("\nTo practice more and learn more")
+f.write("\nBy making my own python projects")
+f.write("\nMy goal is to make a simple program for my learning")
+f = open("python_files.txt", "r")
+f.close()
