@@ -1,29 +1,39 @@
-class Customers:
-    greeting = "Welcome to Coffee Palace!"
-
-    def __init__(self, name, beverage, food, total):
+class Clubmembers:
+    def __init__(self, name, birthday, age, favoritefood, goal):
         self.name = name
-        self.beverage = beverage
-        self.food = food
-        self.total = total
+        self.birthday = birthday
+        self.age = age
+        self.favoritefood = favoritefood
+        self.goal = goal
+
+    def dp1(self):
+        print("Name:", self.name)
+        print("Birthday:", self.birthday)
+        print("Age:", self.age)
+        print("Favorite Food:", self.favoritefood)
+        print("Goal:", self.goal)
 
 
-c_1 = Customers("Nate", "Espresso", "Pastrami on rye", 220)
-c_2 = Customers("Elaine", "Strawberry frappuccino", "Tuna wrap", 270)
-c_3 = Customers("Samirah", "Iced caffe latte", "Cinnamon roll", 225)
-c_4 = Customers("Jerry", "Caramel macchiato", "Glazed doughnut", 230)
-c_5 = Customers("Paz", "Iced tea", "Blueberry pancakes", 315)
+class Clubofficers(Clubmembers):
 
-print(Customers.greeting)
-print(c_2.name)
-print(c_2.beverage)
-print(c_2.food)
-print(c_2.total)
-print(Customers.greeting)
-print(c_4.name)
-print(c_4.beverage)
-print(c_4.food)
-print(c_4.total)
+    def __init__(self, name, birthday, age, favoritefood, goal, position):
+        self.position = position
+        Clubmembers.__init__(self, name, birthday, age, favoritefood, goal)
+
+    def dp2(self):
+        print("Name:", self.name)
+        print("Birthday:", self.birthday)
+        print("Age:", self.age)
+        print("Favorite Food:", self.favoritefood)
+        print("Goal:", self.goal)
+        print("Position:", self.position)
+
+
+m_1 = Clubmembers("Tom", "January 16", 14, "Ice Cream", "To be happy")
+o_4 = Clubofficers("Vera", "June 22", 16, "Beef stroganoff", "To be the world's greatest chef", "Treasurer")
+
+m_1.dp1()
+o_4.dp2()
 
 
 
