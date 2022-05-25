@@ -1,4 +1,5 @@
-f = open("python_files.txt", "r")
-for x in f:
-    print(x)
-
+import os
+if os.path.exists("python_files.txt"):
+    os.remove("python_files.txt")
+else:
+    print("File not exist")
